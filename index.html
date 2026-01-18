@@ -1,174 +1,86 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="ru">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
+<meta charset="UTF-8">
+<title>MENTSELF — модульные пространства под бизнес</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body { margin: 0; font-family: Arial, sans-serif; background: #f8f8f8; color: #111; }
+.container { max-width: 1100px; margin: 0 auto; padding: 40px 20px; }
+.hero { background: linear-gradient(120deg, #111, #333); color: white; padding: 80px 20px; text-align: center; }
+.hero h1 { font-size: 42px; margin-bottom: 20px; }
+.hero p { font-size: 20px; opacity: 0.9; }
+.button { display: inline-block; margin-top: 30px; background: #ff9900; color: black; padding: 16px 28px; text-decoration: none; font-weight: bold; border-radius: 6px; }
+.section { background: white; margin-top: 20px; border-radius: 10px; padding: 40px; }
+.section h2 { font-size: 32px; margin-bottom: 20px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+.card { background: #f2f2f2; padding: 20px; border-radius: 8px; }
+.price { font-size: 28px; font-weight: bold; }
+.footer { text-align: center; padding: 40px; color: #777; font-size: 14px; }
+.image { width: 100%; border-radius: 10px; margin-top: 15px; }
+</style>
 </head>
+
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="ru"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1">&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1">&lt;title&gt;MENTSELF — модульные пространства под бизнес&lt;/title&gt;</p>
-<p class="p1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;style&gt;</p>
-<p class="p1">body {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>font-family: Arial, sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>background: #f8f8f8;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>color: #111;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.container {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>max-width: 1100px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>margin: 0 auto;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>padding: 40px 20px;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.hero {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>background: linear-gradient(120deg, #111, #333);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>padding: 80px 20px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>text-align: center;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.hero h1 {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>font-size: 42px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>margin-bottom: 20px;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.hero p {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>font-size: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>opacity: 0.9;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.button {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>display: inline-block;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>margin-top: 30px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>background: #ff9900;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>color: black;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>padding: 16px 28px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>text-decoration: none;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>font-weight: bold;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>border-radius: 6px;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.section {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>background: white;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>margin-top: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>border-radius: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>padding: 40px;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.section h2 {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>font-size: 32px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>margin-bottom: 20px;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.grid {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>display: grid;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));</p>
-<p class="p1"><span class="Apple-converted-space">    </span>gap: 20px;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.card {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>background: #f2f2f2;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>padding: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>border-radius: 8px;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.price {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>font-size: 28px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>font-weight: bold;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.footer {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>padding: 40px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>color: #777;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>font-size: 14px;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.image {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>border-radius: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>margin-top: 15px;</p>
-<p class="p1">}</p>
-<p class="p1">&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;div class="hero"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;MENTSELF — модульные пространства под бизнес&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Готовые микро-цеха 30 м² под ключ&lt;br&gt;Производство в Челябинске · Доставка и установка&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;a class="button" href="mailto:mentself@mail.ru?subject=Заявка с сайта MENTSELF"&gt;Получить расчет проекта&lt;/a&gt;</p>
-<p class="p1">&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;div class="container"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="section"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2&gt;Кому подходит&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="grid"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="card"&gt;Продавцы Wildberries / Ozon&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="card"&gt;Мастерские и мини-цеха&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="card"&gt;Детейлинг и автосервисы&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="card"&gt;Малое производство&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="card"&gt;Предприниматели, выросшие из гаража&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="card"&gt;Тем, кому нужно готовое рабочее пространство&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="section"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2&gt;MarketBox 30 м²&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>Готовый модуль под бизнес с воротами, утеплением, электрикой, освещением и возможностью адаптации под вашу задачу.</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;img src="modul.jpg" class="image" alt="Модуль MENTSELF"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;img src="plan.jpg" class="image" alt="Планировка MarketBox"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="section"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2&gt;Почему выбирают нас&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="grid"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="card"&gt;Собственное производство&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="card"&gt;Проектируем под задачу клиента&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="card"&gt;Гибкая комплектация&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="card"&gt;Доставка и установка под ключ&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="card"&gt;Честная цена без посредников&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="card"&gt;Опыт в коммерческой недвижимости&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="section"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2&gt;Стоимость&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="price"&gt;Базовая версия — от 1 190 000 ₽&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="price"&gt;Версия PRO — от 1 390 000 ₽&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Индивидуальные решения — по расчету&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="section"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2&gt;Оставить заявку&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Нажмите кнопку — откроется письмо с темой заявки.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;a class="button" href="mailto:mentself@mail.ru?subject=Заявка на модуль MENTSELF"&gt;Написать на почту&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;div class="footer"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>© MENTSELF, Челябинск · Модульные пространства под бизнес</p>
-<p class="p1">&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+
+<div class="hero">
+  <h1>MENTSELF — модульные пространства под бизнес</h1>
+  <p>Готовые микро-цеха 30 м² под ключ<br>Производство в Челябинске · Доставка и установка</p>
+  <a class="button" href="mailto:mentself@mail.ru?subject=Заявка с сайта MENTSELF">Получить расчет проекта</a>
+</div>
+
+<div class="container">
+
+  <div class="section">
+    <h2>Кому подходит</h2>
+    <div class="grid">
+      <div class="card">Продавцы Wildberries / Ozon</div>
+      <div class="card">Мастерские и мини-цеха</div>
+      <div class="card">Детейлинг и автосервисы</div>
+      <div class="card">Малое производство</div>
+      <div class="card">Предприниматели, выросшие из гаража</div>
+      <div class="card">Тем, кому нужно готовое рабочее пространство</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>MarketBox 30 м²</h2>
+    <p>Готовый модуль под бизнес с воротами, утеплением, электрикой, освещением и возможностью адаптации под вашу задачу.</p>
+    <img src="modul.jpg" class="image">
+    <img src="plan.jpg" class="image">
+  </div>
+
+  <div class="section">
+    <h2>Почему выбирают нас</h2>
+    <div class="grid">
+      <div class="card">Собственное производство</div>
+      <div class="card">Проектируем под задачу клиента</div>
+      <div class="card">Гибкая комплектация</div>
+      <div class="card">Доставка и установка под ключ</div>
+      <div class="card">Честная цена без посредников</div>
+      <div class="card">Опыт в коммерческой недвижимости</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Стоимость</h2>
+    <p class="price">Базовая версия — от 1 790 000 ₽</p>
+    <p class="price">Версия PRO — от 2 190 000 ₽</p>
+    <p>Индивидуальные решения — по расчету</p>
+  </div>
+
+  <div class="section">
+    <h2>Оставить заявку</h2>
+    <p>Нажмите кнопку — откроется письмо.</p>
+    <a class="button" href="mailto:mentself@mail.ru?subject=Заявка на модуль MENTSELF">Написать на почту</a>
+  </div>
+
+</div>
+
+<div class="footer">
+  © MENTSELF, Челябинск · Модульные пространства под бизнес
+</div>
+
 </body>
 </html>
